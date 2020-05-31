@@ -1,14 +1,14 @@
-package com.leetcode.array;
+package com.usecase.leetcode.array;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DuplicateRemovalTest {
 
     @Test
     void removeDuplicates() {
-        int[] nums = {1, 2, 2, 3, 4, 4, 5};
+        int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         assertEquals(5, DuplicateRemoval.run(nums));
     }
 
