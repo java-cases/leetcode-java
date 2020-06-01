@@ -13,13 +13,13 @@ class FirstMissingPositiveTest {
     }
 
     @Test
-    void firstMissingPositiveWithNullArray() {
+    void runWithNullArray() {
         int[] nums = null;
         assertEquals(1, FirstMissingPositive.run(nums));
     }
 
     @Test
-    void firstMissingPositiveWithEmptyArray() {
+    void runWithEmptyArray() {
         int[] nums = {};
         assertEquals(1, FirstMissingPositive.run(nums));
     }
