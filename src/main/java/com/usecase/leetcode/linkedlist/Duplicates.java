@@ -8,16 +8,13 @@ public class Duplicates {
         }
 
         ListNode current = head;
-        ListNode next = head.next;
 
-        while (next != null) {
-            if (current.val == next.val) {
-                current.next = next.next;
+        while (current.next != null) {
+            if (current.val == current.next.val) {
+                current.next = current.next.next;
             } else {
-                current = next;
+                current = current.next;
             }
-
-            next = current.next;
         }
 
         return head;
